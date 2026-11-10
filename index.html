@@ -1,113 +1,359 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>STAMZON - Impresoras</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="STAMZON: soluciones de impresión, impresoras de escritorio, equipos 3D, accesorios y consumibles."
+  />
+  <title>STAMZON - Impresoras</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <header>
-      <h1>STAMZON - Impresoras de calidad</h1>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#informacion">Información</a></li>
-          <li><a href="#galeria">Galería</a></li>
-          <li><a href="#datos">Datos Destacados</a></li>
-          <li><a href="#enlaces">Enlaces</a></li>
+<body>
+  <a class="saltar-contenido" href="#contenido">
+    Saltar al contenido
+  </a>
+
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenido">
+      <h1 class="marca">
+        <a class="marca__enlace" href="#inicio">
+          STAMZON
+          <span class="marca__subtitulo">Impresoras de calidad</span>
+        </a>
+      </h1>
+
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="navegacion__lista">
+          <li><a class="navegacion__enlace" href="#inicio">Inicio</a></li>
+          <li><a class="navegacion__enlace" href="#informacion">Información</a></li>
+          <li><a class="navegacion__enlace" href="#galeria">Galería</a></li>
+          <li><a class="navegacion__enlace" href="#datos">Datos destacados</a></li>
+          <li><a class="navegacion__enlace" href="#enlaces">Enlaces</a></li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
+  <main id="contenido">
+    <!-- Presentación -->
+    <section id="inicio" class="presentacion" aria-labelledby="titulo-inicio">
+      <div class="contenedor">
+        <h2 id="titulo-inicio" class="presentacion__titulo">
+          IMPRESORAS STAMZON
+        </h2>
 
-      <section id="inicio">
-        <h2>IMPRESORAS STAMZON</h2>
-        <p>En STAMZON ofrecemos soluciones integrales de impresión con una amplia gama de productos. Contamos con la experiencia y el conocimiento necesario para ayudarte a encontrar la impresora perfecta para tus necesidades.</p>
-        <a href="#galeria">Explorar Catálogo</a>
-      </section>
+        <p class="presentacion__texto">
+          En STAMZON ofrecemos soluciones integrales de impresión con una
+          amplia gama de productos. Contamos con la experiencia y el
+          conocimiento necesario para ayudarte a encontrar la impresora
+          perfecta para tus necesidades.
+        </p>
 
-      <section id="informacion">
-        <h2>¿Por qué elegir STAMZON?</h2>
+        <a class="boton" href="#galeria">Explorar catálogo</a>
+      </div>
+    </section>
 
-        <article>
-          <h3>Innovación sin límites</h3>
-          <p>Explora lo último en tecnología de impresión. Modelos de alta gama con conectividad avanzada y rendimiento excepcional para superar los estándares de la industria.</p>
+    <!-- Información -->
+    <section
+      id="informacion"
+      class="seccion contenedor"
+      aria-labelledby="titulo-informacion"
+    >
+      <h2 id="titulo-informacion" class="seccion__titulo">
+        ¿Por qué elegir STAMZON?
+      </h2>
+
+      <div class="beneficios">
+        <article class="beneficio">
+          <span class="beneficio__circulo" aria-hidden="true"></span>
+          <h3 class="beneficio__titulo">Innovación sin límites</h3>
+          <p>
+            Explora lo último en tecnología de impresión. Modelos de alta
+            gama con conectividad avanzada y rendimiento excepcional para
+            superar los estándares de la industria.
+          </p>
         </article>
 
-        <article>
-          <h3>Variedad y accesorios</h3>
-          <p>Desde impresoras 3D industriales hasta repuestos, filamentos, cartuchos de tóner y papel de alta calidad. Encontrá todo lo necesario en un solo lugar.</p>
+        <article class="beneficio">
+          <span class="beneficio__circulo" aria-hidden="true"></span>
+          <h3 class="beneficio__titulo">Variedad y accesorios</h3>
+          <p>
+            Desde impresoras 3D industriales hasta repuestos, filamentos,
+            cartuchos de tóner y papel de alta calidad. Encontrá todo lo
+            necesario en un solo lugar.
+          </p>
         </article>
 
-        <article>
-          <h3>Confianza y soporte</h3>
-          <p>Ofrecemos un servicio post-venta incomparable, con técnicos calificados listos para resolver cualquier consulta y guiarte en el proceso de mantenimiento de tus equipos.</p>
+        <article class="beneficio">
+          <span class="beneficio__circulo" aria-hidden="true"></span>
+          <h3 class="beneficio__titulo">Confianza y soporte</h3>
+          <p>
+            Ofrecemos un servicio post-venta incomparable, con técnicos
+            calificados listos para resolver cualquier consulta y guiarte
+            en el proceso de mantenimiento de tus equipos.
+          </p>
         </article>
-      </section>
+      </div>
+    </section>
 
-      <section id="galeria">
-        <h2>Galería</h2>
+    <!-- Galería: seis tarjetas con imagen, título, descripción y enlace -->
+    <section
+      id="galeria"
+      class="seccion contenedor"
+      aria-labelledby="titulo-galeria"
+    >
+      <h2 id="titulo-galeria" class="seccion__titulo">Galería</h2>
 
-        <figure>
-          <img src="imgs/impresora1.jpeg" alt="Impresoras de escritorio" />
-          <figcaption>Impresoras de escritorio</figcaption>
-        </figure>
+      <div class="galeria">
+        <article class="tarjeta">
+          <img
+            class="tarjeta__imagen"
+            src="imgs/impresora1.jpeg"
+            alt="Impresoras de escritorio"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="tarjeta__contenido">
+            <h3 class="tarjeta__titulo">Impresoras de escritorio</h3>
+            <p>
+              Soluciones para imprimir documentos y trabajos cotidianos
+              en el hogar o la oficina.
+            </p>
+            <a
+              class="boton tarjeta__enlace"
+              href="https://www.hp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Explorar en HP
+              <span class="solo-lectores"> (abre en otra pestaña)</span>
+            </a>
+          </div>
+        </article>
 
-        <figure>
-          <img src="imgs/impresora3d.jpeg" alt="Impresoras 3D industriales" />
-          <figcaption>Impresoras 3D industriales</figcaption>
-        </figure>
+        <article class="tarjeta">
+          <img
+            class="tarjeta__imagen"
+            src="imgs/impresora3d.jpeg"
+            alt="Impresoras 3D industriales"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="tarjeta__contenido">
+            <h3 class="tarjeta__titulo">Impresoras 3D industriales</h3>
+            <p>
+              Tecnología para transformar diseños digitales en piezas,
+              prototipos y nuevos proyectos.
+            </p>
+            <a
+              class="boton tarjeta__enlace"
+              href="https://es.wikipedia.org/wiki/Impresi%C3%B3n_3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Conocer la impresión 3D
+              <span class="solo-lectores"> (abre en otra pestaña)</span>
+            </a>
+          </div>
+        </article>
 
-        <figure>
-          <img src="imgs/repuestos.jpeg" alt="Accesorios y repuestos" />
-          <figcaption>Accesorios y repuestos</figcaption>
-        </figure>
+        <article class="tarjeta">
+          <img
+            class="tarjeta__imagen"
+            src="imgs/repuestos.jpeg"
+            alt="Accesorios y repuestos para impresoras"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="tarjeta__contenido">
+            <h3 class="tarjeta__titulo">Accesorios y repuestos</h3>
+            <p>
+              Complementos para cuidar tus equipos y mantener su
+              funcionamiento en buenas condiciones.
+            </p>
+            <a class="boton tarjeta__enlace" href="#enlaces">
+              Consultar recursos
+            </a>
+          </div>
+        </article>
 
-        <figure>
-          <img src="imgs/filamentos.jpeg" alt="Filamentos y materiales" />
-          <figcaption>Filamentos y materiales</figcaption>
-        </figure>
+        <article class="tarjeta">
+          <img
+            class="tarjeta__imagen"
+            src="imgs/filamentos.jpeg"
+            alt="Filamentos y materiales para impresión 3D"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="tarjeta__contenido">
+            <h3 class="tarjeta__titulo">Filamentos y materiales</h3>
+            <p>
+              Materiales para explorar diferentes terminaciones y
+              posibilidades en tus proyectos de impresión 3D.
+            </p>
+            <a
+              class="boton tarjeta__enlace"
+              href="https://es.wikipedia.org/wiki/Impresi%C3%B3n_3D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Leer sobre impresión 3D
+              <span class="solo-lectores"> (abre en otra pestaña)</span>
+            </a>
+          </div>
+        </article>
 
-        <figure>
-          <img src="imgs/cartuchos.jpeg" alt="Cartuchos" />
-          <figcaption>Cartuchos y tóner</figcaption>
-        </figure>
+        <article class="tarjeta">
+          <img
+            class="tarjeta__imagen"
+            src="imgs/cartuchos.jpeg"
+            alt="Cartuchos y tóner para impresoras"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="tarjeta__contenido">
+            <h3 class="tarjeta__titulo">Cartuchos y tóner</h3>
+            <p>
+              Consumibles para seguir imprimiendo documentos, imágenes
+              y trabajos con tu equipo.
+            </p>
+            <a
+              class="boton tarjeta__enlace"
+              href="https://www.hp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Consultar en HP
+              <span class="solo-lectores"> (abre en otra pestaña)</span>
+            </a>
+          </div>
+        </article>
 
-        <figure>
-          <img src="imgs/papel.jpeg" alt="Papel y consumibles" />
-          <figcaption>Papel y consumibles</figcaption>
-        </figure>
-      </section>
+        <article class="tarjeta">
+          <img
+            class="tarjeta__imagen"
+            src="imgs/papel.jpeg"
+            alt="Papel y consumibles para impresión"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="tarjeta__contenido">
+            <h3 class="tarjeta__titulo">Papel y consumibles</h3>
+            <p>
+              Opciones para acompañar tus impresiones cotidianas y
+              preparar diferentes tipos de trabajos.
+            </p>
+            <a class="boton tarjeta__enlace" href="#enlaces">
+              Ver recursos de impresión
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <section id="datos">
-        <h2>Datos Destacados</h2>
-        <ul>
-          <li><strong>15+</strong> Años de experiencia en el mercado argentino</li>
-          <li><strong>5000+</strong> Clientes satisfechos en todo el país</li>
-          <li><strong>200+</strong> Modelos disponibles en nuestro catálogo</li>
-        </ul>
-      </section>
+    <!-- Datos destacados -->
+    <section
+      id="datos"
+      class="seccion contenedor"
+      aria-labelledby="titulo-datos"
+    >
+      <h2 id="titulo-datos" class="seccion__titulo">Datos destacados</h2>
 
-      <section id="enlaces">
-        <h2>Enlaces y Recursos</h2>
-        <ul>
-          <li><a href="https://www.hp.com" target="_blank">Sitio Oficial HP - Visita hp.com</a></li>
-          <li><a href="https://www.youtube.com" target="_blank">Canal de YouTube - Tutoriales y reviews</a></li>
-          <li><a href="https://es.wikipedia.org/wiki/Impresión" target="_blank">Wikipedia - Historia de la impresión</a></li>
-          <li><a href="https://www.instagram.com" target="_blank">Redes Sociales - Síguenos en Instagram</a></li>
-        </ul>
-      </section>
+      <ul class="estadisticas">
+        <li class="estadistica">
+          <strong class="estadistica__numero">15+</strong>
+          <span>Años de experiencia en el mercado argentino</span>
+        </li>
+        <li class="estadistica">
+          <strong class="estadistica__numero">5000+</strong>
+          <span>Clientes satisfechos en todo el país</span>
+        </li>
+        <li class="estadistica">
+          <strong class="estadistica__numero">200+</strong>
+          <span>Modelos disponibles en nuestro catálogo</span>
+        </li>
+      </ul>
+    </section>
 
-    </main>
+    <!-- Recursos externos -->
+    <section
+      id="enlaces"
+      class="seccion contenedor"
+      aria-labelledby="titulo-enlaces"
+    >
+      <h2 id="titulo-enlaces" class="seccion__titulo">Enlaces y recursos</h2>
 
-    <footer>
-      <p>Rodrigo Masek</p>
-      <p>Curso: 3CSCT</p>
-      <p>Año: 2026</p>
-      <p>STAMZON - Impresoras de la mejor calidad</p>
-    </footer>
+      <ul class="recursos">
+        <li>
+          <a
+            class="recurso"
+            href="https://www.hp.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Sitio oficial HP</strong>
+            <span>Visitá hp.com</span>
+            <span class="solo-lectores">Abre en otra pestaña.</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="recurso"
+            href="https://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>YouTube</strong>
+            <span>Buscá tutoriales y reviews</span>
+            <span class="solo-lectores">Abre en otra pestaña.</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="recurso"
+            href="https://es.wikipedia.org/wiki/Impresi%C3%B3n"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Wikipedia — Impresión</strong>
+            <span>Historia de la impresión</span>
+            <span class="solo-lectores">Abre en otra pestaña.</span>
+          </a>
+        </li>
+        <li>
+          <a
+            class="recurso"
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Redes sociales</strong>
+            <span>Visitá Instagram</span>
+            <span class="solo-lectores">Abre en otra pestaña.</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-  </body>
+  <footer class="pie">
+    <div class="contenedor pie__contenido">
+      <div class="pie__estudiante">
+        <p><strong>Rodrigo Masek</strong></p>
+        <p>Curso: 3CSCT</p>
+        <p>Año: 2026</p>
+      </div>
+
+      <p class="pie__frase">
+        STAMZON - Impresoras de la mejor calidad
+      </p>
+
+      <a class="pie__marca" href="#inicio">STAMZON</a>
+    </div>
+  </footer>
+</body>
 </html>
+
