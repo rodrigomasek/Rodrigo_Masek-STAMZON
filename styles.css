@@ -1,6 +1,4 @@
-/* ==========================================
-   1. VARIABLES
-   ========================================== */
+/*1. VARIABLES*/
 
 :root {
   --color-principal: #4b5563;
@@ -15,7 +13,7 @@
   --color-decorativo: #c2c2c2;
   --color-foco: #1d4ed8;
 
-  --fuente-principal: "Segoe UI", Arial, sans-serif;
+  --fuente-principal: "DM Sans", "Segoe UI", Arial, sans-serif;
 
   --espacio-xs: 0.5rem;
   --espacio-sm: 0.75rem;
@@ -32,10 +30,7 @@
   --transicion: 180ms ease;
 }
 
-/* ==========================================
-   2. BASE — MOBILE FIRST
-   Los estilos iniciales son para celulares.
-   ========================================== */
+/*2. BASE — MOBILE FIRST. Los estilos iniciales son para celulares.*/
 
 *,
 *::before,
@@ -123,9 +118,7 @@ section {
   text-transform: uppercase;
 }
 
-/* ==========================================
-   3. ACCESIBILIDAD
-   ========================================== */
+/*3. ACCESIBILIDAD*/
 
 .solo-lectores,
 .saltar-contenido:not(:focus) {
@@ -150,9 +143,7 @@ section {
   border-radius: var(--radio);
 }
 
-/* ==========================================
-   4. ENCABEZADO Y NAVEGACIÓN
-   ========================================== */
+/*4. ENCABEZADO Y NAVEGACIÓN*/
 
 .encabezado {
   padding-block: var(--espacio-lg);
@@ -226,9 +217,7 @@ section {
   outline-color: var(--color-texto-claro);
 }
 
-/* ==========================================
-   5. PRESENTACIÓN Y BOTONES
-   ========================================== */
+/*5. PRESENTACIÓN Y BOTONES*/
 
 .presentacion {
   padding-block: 3.5rem;
@@ -274,9 +263,7 @@ section {
   box-shadow: var(--sombra);
 }
 
-/* ==========================================
-   6. BENEFICIOS
-   ========================================== */
+/*6. BENEFICIOS*/
 
 .beneficios {
   display: grid;
@@ -310,9 +297,7 @@ section {
   font-size: 0.9375rem;
 }
 
-/* ==========================================
-   7. GALERÍA Y TARJETAS
-   ========================================== */
+/*7. GALERÍA Y TARJETAS*/
 
 .galeria {
   display: grid;
@@ -358,9 +343,7 @@ section {
   margin-top: auto;
 }
 
-/* ==========================================
-   8. DATOS DESTACADOS
-   ========================================== */
+/*8. DATOS DESTACADOS*/
 
 .estadisticas {
   display: grid;
@@ -386,9 +369,7 @@ section {
   line-height: 1.2;
 }
 
-/* ==========================================
-   9. RECURSOS EXTERNOS
-   ========================================== */
+/*9. RECURSOS EXTERNOS*/
 
 .recursos {
   display: grid;
@@ -435,9 +416,7 @@ section {
   text-decoration: underline;
 }
 
-/* ==========================================
-   10. PIE DE PÁGINA
-   ========================================== */
+/*10. PIE DE PÁGINA*/
 
 .pie {
   margin-top: var(--espacio-xl);
@@ -471,9 +450,7 @@ section {
   text-decoration: none;
 }
 
-/* ==========================================
-   11. TABLETS — DESDE 768 PX
-   ========================================== */
+/*11. TABLETS — DESDE 768 PX*/
 
 @media (min-width: 48rem) {
   :root {
@@ -505,9 +482,7 @@ section {
   }
 }
 
-/* ==========================================
-   12. COMPUTADORAS — DESDE 1024 PX
-   ========================================== */
+/*12. COMPUTADORAS — DESDE 1024 PX*/
 
 @media (min-width: 64rem) {
   :root {
@@ -567,9 +542,7 @@ section {
   }
 }
 
-/* ==========================================
-   13. MOVIMIENTO REDUCIDO
-   ========================================== */
+/*13. MOVIMIENTO REDUCIDO*/
 
 @media (prefers-reduced-motion: reduce) {
   html {
